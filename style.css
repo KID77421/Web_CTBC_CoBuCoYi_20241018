@@ -10,19 +10,35 @@ body {
 }
 
 /* 導覽列 */
-#nav {
-    display: grid;
-    grid-template-columns: 30% 50% 20%;
-    width: 800px;
-    /* background: #333; */
-    margin: 35px auto;
+nav {
     /* 定位：固定 */
     position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: 1200px;
+    /* background: #333; */
+    margin: 35px auto;
+    
+}
+
+#logo img {
+    width: 200px;
 }
 
 #link {
     /* tar 靠右對齊 */
     text-align: right;
+    padding-top: 18px;
+}
+
+#social {
+    padding-top: 15px;
+    padding-left: 50px;
 }
 
 a {
@@ -43,7 +59,7 @@ a:hover {
 #banner {
     background-image: url(./img/banner.jpg);
     width: 100%;
-    height: 1280px;
+    height: 100vh;
 }
 
 /* 內容區域 */
@@ -134,9 +150,10 @@ h1 {
     opacity: 1;
 }
 
+/* 產品區愈 */
 #product {
-    height: 500px;
-    width: 800px;
+    height: 600px;
+    width: 1000px;
     margin: 0 auto;
     /* background-color: #333; */
     /* 文字對齊：置中 (對行內元素調整對齊) */
@@ -149,7 +166,7 @@ h1 {
     top: 60px;
     right: 50px;
     /* background-color: #1b9; */
-    width: 250px;
+    width: 260px;
 }
 
 /* 取得 #info 內的所有 h2 */
@@ -162,12 +179,13 @@ h1 {
 #info h6 {
     color: #666;
     margin-bottom: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
+    font-size: 8px;
 }
 
 #info p {
     text-align: left;
-    line-height: 2;
+    line-height: 3;
     letter-spacing: 15px;
 }
 
@@ -176,11 +194,39 @@ h1 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 30px;
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
 #idea-pic img {
     width: 100%;
     border: 8px solid #fff;
+}
+
+#idea-content {
+    line-height: 3;
+    letter-spacing: 10px;
+}
+
+#idea-content a {
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+#idea-content a:hover {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    background-image: url(./img/paper.png);
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #555;
 }
